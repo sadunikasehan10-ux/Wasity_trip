@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+  <meta charset="UTF-8">
+  <title>මනාප ප්‍රකාශ කිරීම</title>
+</head>
+<body>
+
+  <h2>🗳️ මනාප ප්‍රකාශ කිරීම</h2>
+
+  <p>ඔබගේ නම සහ මනාපය තෝරන්න</p>
+
+  <label>නම:</label><br>
+  <input type="text" id="name" placeholder="ඔබගේ නම"><br><br>
+
+  <label>wasity yearly trip:</label><br>
+  <select id="choice" onchange="toggleCustom()">
+    <option value="">-- තෝරන්න --</option>
+    <option value="නුවර">නුවර</option>
+    <option value="ගාල්ල">ගාල්ල</option>
+    <option value="පුත්තලම">පුත්තලම</option>
+    <option value="සිගිරිය">සිගිරිය</option>
+    <option value="කුරුණෑගල">කුරුණෑගල</option>
+    <option value="ගම්පහ">ගම්පහ</option>
+    <option value="ඩුබායි">ඩුබායි</option>
+    <option value="custom">Create custom answer</option>
+  </select><br><br>
+
+  <div id="customBox" style="display:none;">
+    <label>Custom answer:</label><br>
+    <input type="text" id="customAnswer" placeholder="ඔබගේ custom answer එක"><br><br>
+  </div>
+
+  <button>Submit</button>
+
+  <script>
+    function toggleCustom() {
+      const choice = document.getElementById("choice").value;
+      const box = document.getElementById("customBox");
+
+      if (choice === "custom") {
+        box.style.display = "block";
+      } else {
+        box.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+</html>
