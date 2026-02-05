@@ -28,7 +28,7 @@
 
   <div id="customBox" style="display:none;">
     <label>Custom answer:</label><br>
-    <input type="text" id="customAnswer" placeholder="ඔබගේ custom answer එක"><br><br>
+    <input type="text" id="customAnswer" placeholder="create a custom answer"><br><br>
   </div>
 
   <button>Submit</button>
